@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coffee Time, la boutique pour les amateurs de café avec son savoir faire authentique"
+    />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>Coffee Time</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="/assets/img/Logo_coffeTime.png" alt="logo Coffee Time" />Cofee
+        Time
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item"><a href="#">Accueil</a></li>
+          <li class="header__item"><a href="#">Catalogue</a></li>
+          <li class="header__item"><a href="#">A propos</a></li>
+
+          <li class="header__item header__login">
+            <button id="loginBtn" class="header__login-btn">
+              Se connecter
+            </button>
+            <div id="loginForm" class="header__login-form">
+              <form action="/login" method="post">
+                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Mot de passe"
+                  required
+                />
+                <button type="submit">Connexion</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="about">
+        <div class="about__content">
+          <h1 class="about__title">Bienvenue dans notre café</h1>
+          <p class="about__text">
+            Venez découvrir notre gamme de cafés soigneusement sélectionnés par
+            nos expert, torréfiés sur place par nos artisans passionnés
+          </p>
+          <img
+            class="about__img"
+            src="/assets/img//a table.webp"
+            alt="Café authentique sur une table ancienne"
+          />
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="skills__content">
+          <h2 class="skills__title">Notre savoir-faire</h2>
+          <p class="skills__text">
+            Apprenez en plus sur notre processus de torréfaction et notre savoir
+            faire
+          </p>
+          <img
+            class="skills__img"
+            src="/assets/img/préparation.webp"
+            alt="Grain de café en préparation avant torréfaction"
+          />
+          <img
+            class="skills__img"
+            src="/assets/img/final torifié.webp"
+            alt="image de notre savoir faire"
+          />
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="shop__content">
+          <h2 class="shop__title">La boutique</h2>
+          <p class="shop__text">
+            Découvrez nos produits et nos accessoires de café pour votre plaisir
+            gustatif
+          </p>
+          <img
+            class="shop__img"
+            src="/assets/img/café à lancienne.webp"
+            alt="image de notre savoir faire"
+          />
+          <img
+            class="shop__img"
+            src="/assets/img/sachet-cafée.webp"
+            alt="image de notre savoir faire"
+          />
+          <a href="#">Voir tous les produits</a>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2 class="news__title">Nouveautés</h2>
+        <div class="news__products">
+          <article class="news__product">
+            <h3 class="news__product-title">Produit A</h3>
+            <p class="news__product-text">Description du produit</p>
+            <img
+              class="news__product-img"
+              src="/assets/img/cafe-sachet.webp"
+              alt="Café en grain en sachet"
+            />
+          </article>
+
+          <article class="news__product">
+            <h3 class="news__product-title">Produit B</h3>
+            <p class="news__product-text">Description du produit</p>
+            <img
+              class="news__product-img"
+              src="/assets/img/sachet.webp"
+              alt="Café en grain en sachet"
+            />
+          </article>
+
+          <article class="news__product">
+            <h3 class="news__product-title">Produit C</h3>
+            <p class="news__product-text">Description du produit</p>
+            <img
+              class="news__product-img"
+              src="/assets/img/sachet.webp"
+              alt="Café en grain en sachet"
+            />
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2025 Coffee Time, tout droit réservé</p>
+      <nav class="footer__social">
+        <a href="#" class="footer__link">Twitter</a>
+        <a href="#" class="footer__link">Instagram</a>
+        <a href="#" class="footer__link">Email</a>
+      </nav>
+
+      <a href="#" class="footer__legal">Mentions légales</a>
+    </footer>
+
+    <script src="/intégration/js/loginForm.js"></script>
+  </body>
+</html>
