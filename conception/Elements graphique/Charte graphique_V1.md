@@ -1,4 +1,4 @@
-# CHARTE GRAPHIQUE VERSION 1
+# CHARTE GRAPHIQUE VERSION 1 > a revoir
 
 ## 🎨 COULEURS
 
@@ -16,7 +16,7 @@ Palette de couleurs chaleureseure inspirée du café et du naturel :
 
 - Éléments de contraste (doré/cuivré facultatif) : #C89B6D
 
----
+## Modifier les rendu si nécessaire.
 
 ## Typographies
 

@@ -1,0 +1,24 @@
+/* ==============================
+    VARIABLES GLOBALES
+   Charte graphique Coffee Time V1
+   ============================== */
+
+:root {
+  /* ===== Couleurs ===== */
+  --color-bg: #f5e6d3; /* Fond principal (beige café crème) */
+  --color-bg-alt: #eadac1; /* Accent clair (sable doux) */
+  --color-text: #3b2c2a; /* Texte principal (espresso brun foncé) */
+  --color-secondary: #8b5e3c; /* Accent secondaire (brun moyen) */
+  --color-primary: #5a3a1c; /* Boutons / Call-to-Action (marron café corsé) */
+  --color-contrast: #c89b6d; /* Éléments de contraste (doré/cuivré) */
+
+  /* ===== Typographies ===== */
+  --font-title: "Playfair Display", "Merriweather", serif;
+  --font-body: "Roboto", "Open Sans", sans-serif;
+  --font-ui: "Montserrat", "Poppins", sans-serif;
+
+  /* ===== Ombres ===== */
+  --shadow-soft: 0 2px 6px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-strong: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
