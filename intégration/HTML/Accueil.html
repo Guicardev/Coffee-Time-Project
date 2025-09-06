@@ -6,9 +6,15 @@
       name="description"
       content="Coffee Time, la boutique pour les amateurs de café avec son savoir faire authentique"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="/assets/css/base/reset.css" />
     <!--<link rel="stylesheet" href="/assets/css/style.css" />-->
     <link rel="stylesheet" href="/assets/css/layout/header.css" />
+    <link rel="stylesheet" href="/assets/css/layout/footer.css" />
 
     <title>Coffee Time</title>
   </head>
@@ -141,10 +147,21 @@
 
     <footer class="footer">
       <p class="footer__text">© 2025 Coffee Time, tout droit réservé</p>
+
       <nav class="footer__social">
-        <a href="#" class="footer__link">Twitter</a>
-        <a href="#" class="footer__link">Instagram</a>
-        <a href="#" class="footer__link">Email</a>
+        <a href="#" class="footer__link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="footer__link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="mailto:contact@coffeetime.com"
+          class="footer__link"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
       </nav>
 
       <a href="#" class="footer__legal">Mentions légales</a>
