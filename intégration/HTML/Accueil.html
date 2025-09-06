@@ -1,0 +1,181 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Coffee Time, la boutique pour les amateurs de café avec son savoir faire authentique"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/css/base/reset.css" />
+    <link rel="stylesheet" href="/assets/css/layout/header.css" />
+    <link rel="stylesheet" href="/assets/css/layout/footer.css" />
+    <link rel="stylesheet" href="/assets/css/pages/accueil.css" />
+
+    <title>Coffee Time</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="/assets/img/Logo_coffeTime.png" alt="logo Coffee Time" />
+        <span class="sr-only">Mon logo</span>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item"><a href="#">Accueil</a></li>
+          <li class="header__item"><a href="#">Catalogue</a></li>
+          <li class="header__item"><a href="#">A propos</a></li>
+
+          <li class="header__item header__login">
+            <button id="loginBtn" class="header__login-btn">
+              Se connecter
+            </button>
+            <div id="loginForm" class="header__login-form">
+              <form action="/login" method="post">
+                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Mot de passe"
+                  required
+                />
+                <button type="submit">Connexion</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section id="about" class="about">
+        <div class="about__content">
+          <div class="about__text-container">
+            <h1 class="about__title">Bienvenue dans notre café</h1>
+            <p class="about__text">
+              Venez découvrir notre gamme de cafés soigneusement sélectionnés
+              par nos expert, torréfiés sur place par nos artisans passionnés
+            </p>
+          </div>
+          <img
+            class="about__img"
+            src="/assets/img/a table.webp"
+            alt="Café authentique sur une table ancienne"
+          />
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="skills__content">
+          <div class="skills__img-container">
+            <img class="skills__img" src="/assets/img/préparation.webp" />
+            <img class="skills__img" src="/assets/img/final torifié.webp" />
+          </div>
+          <div class="skills__text-container">
+            <h2 class="skills__title">Notre savoir-faire</h2>
+            <p class="skills__text">
+              Apprenez en plus sur notre processus de torréfaction et notre
+              savoir-faire
+            </p>
+            <a href="#about" class="skills__btn">En savoir plus</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="shop__content">
+          <div class="shop__text-container">
+            <h2 class="shop__title">La boutique</h2>
+            <p class="shop__text">
+              Découvrez nos produits et nos accessoires de café pour votre
+              plaisir gustatif
+            </p>
+          </div>
+
+          <div class="shop__img-block">
+            <div class="shop__img-container">
+              <img
+                class="shop__img"
+                src="/assets/img/café à lancienne.webp"
+                alt="Image de notre savoir-faire"
+              />
+              <img
+                class="shop__img"
+                src="/assets/img/sachet-cafée.webp"
+                alt="Image de notre savoir-faire"
+              />
+            </div>
+            <a href="#" class="shop__link">Voir tous les produits</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2 class="news__title">Nouveautés</h2>
+        <div class="news__products">
+          <article class="news__product">
+            <h3 class="news__product-title">Produit A</h3>
+            <p class="news__product-text">Description du produit</p>
+            <img
+              class="news__product-img"
+              src="/assets/img/sachet.webp"
+              alt="Café en grain en sachet"
+            />
+            <a href="#" class="news__product-btn">Voir le produit</a>
+          </article>
+
+          <article class="news__product">
+            <h3 class="news__product-title">Produit B</h3>
+            <p class="news__product-text">Description du produit</p>
+            <img
+              class="news__product-img"
+              src="/assets/img/sachet.webp"
+              alt="Café en grain en sachet"
+            />
+            <a href="#" class="news__product-btn">Voir le produit</a>
+          </article>
+
+          <article class="news__product">
+            <h3 class="news__product-title">Produit C</h3>
+            <p class="news__product-text">Description du produit</p>
+            <img
+              class="news__product-img"
+              src="/assets/img/sachet.webp"
+              alt="Café en grain en sachet"
+            />
+            <a href="#" class="news__product-btn">Voir le produit</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2025 Coffee Time, tout droit réservé</p>
+
+      <nav class="footer__social">
+        <a href="#" class="footer__link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="footer__link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="mailto:contact@coffeetime.com"
+          class="footer__link"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </nav>
+
+      <a href="#" class="footer__legal">Mentions légales</a>
+    </footer>
+
+    <script src="/intégration/js/loginForm.js"></script>
+  </body>
+</html>
