@@ -78,6 +78,13 @@
   box-shadow: inset 0 -2px 0 #fff; /* petit trait en bas pour montrer l’item actif */
 }
 
+/* pour la partie ejs à modifier
+.header__item a.is-active {
+  background: #b57b4f; couleur "sélectionnée"
+  box-shadow: inset 0 -2px 0 #fff;
+  font-weight: bold;
+}*/
+
 /* Bouton login */
 .header__login-btn {
   background: #8b5e3c;
