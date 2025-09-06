@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions légales - Coffee Time</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/base/reset.css" />
+    <link rel="stylesheet" href="/assets/css/layout/header.css" />
+    <link rel="stylesheet" href="/assets/css/layout/footer.css" />
+    <link rel="stylesheet" href="/assets/css/pages/mentionLegales.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img src="/assets/img/Logo_coffeTime.png" alt="logo Coffee Time" />
+        <span class="sr-only">Mon logo</span>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item"><a href="#">Accueil</a></li>
+          <li class="header__item"><a href="#">Catalogue</a></li>
+          <li class="header__item"><a href="#">A propos</a></li>
+
+          <li class="header__item header__login">
+            <button id="loginBtn" class="header__login-btn">
+              Se connecter
+            </button>
+            <div id="loginForm" class="header__login-form">
+              <form action="/login" method="post">
+                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Mot de passe"
+                  required
+                />
+                <button type="submit">Connexion</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <section class="legal">
+        <h1 class="legal__title">Mentions légales</h1>
+
+        <div class="legal__section">
+          <h2 class="legal__subtitle">Éditeur du site</h2>
+          <p class="legal__text">
+            Ce site est édité par <strong>Coffee Time</strong>, entreprise
+            fictive pour des projets de démonstration.
+          </p>
+          <p class="legal__text">
+            Adresse : 123 Rue du Café, 75000 Paris, France<br />
+            Téléphone : +33 1 23 45 67 89<br />
+            Email : contact@coffeetime.com
+          </p>
+        </div>
+
+        <div class="legal__section">
+          <h2 class="legal__subtitle">Responsable de la publication</h2>
+          <p class="legal__text">
+            Le responsable de la publication est <strong>Jean Dupont</strong>.
+          </p>
+        </div>
+
+        <div class="legal__section">
+          <h2 class="legal__subtitle">Hébergeur</h2>
+          <p class="legal__text">
+            Le site est hébergé par <strong>FictiHost</strong><br />
+            Adresse : 456 Avenue de l’Hébergement, 75000 Paris, France<br />
+            Téléphone : +33 1 98 76 54 32
+          </p>
+        </div>
+
+        <div class="legal__section">
+          <h2 class="legal__subtitle">Propriété intellectuelle</h2>
+          <p class="legal__text">
+            L’ensemble du contenu du site (textes, images, logos, vidéos) est
+            protégé par le droit d’auteur. Toute reproduction totale ou
+            partielle est interdite sans autorisation.
+          </p>
+        </div>
+
+        <div class="legal__section">
+          <h2 class="legal__subtitle">Responsabilité</h2>
+          <p class="legal__text">
+            Coffee Time décline toute responsabilité en cas d’erreurs ou
+            d’omissions sur le site et ne peut être tenu responsable de
+            l’utilisation qui pourrait être faite des informations présentées.
+          </p>
+        </div>
+
+        <div class="legal__section">
+          <h2 class="legal__subtitle">Données personnelles</h2>
+          <p class="legal__text">
+            Les informations collectées via le site sont destinées à un usage
+            strictement interne à des fins de démonstration. Aucun traitement
+            réel de données personnelles n’est effectué sur ce site fictif.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2025 Coffee Time, tout droit réservé</p>
+
+      <nav class="footer__social">
+        <a href="#" class="footer__link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="footer__link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="mailto:contact@coffeetime.com"
+          class="footer__link"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </nav>
+
+      <a href="#" class="footer__legal">Mentions légales</a>
+    </footer>
+
+    <script src="/intégration/js/loginForm.js"></script>
+  </body>
+</html>
