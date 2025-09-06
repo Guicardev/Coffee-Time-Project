@@ -12,9 +12,9 @@
     />
 
     <link rel="stylesheet" href="/assets/css/base/reset.css" />
-    <!--<link rel="stylesheet" href="/assets/css/style.css" />-->
     <link rel="stylesheet" href="/assets/css/layout/header.css" />
     <link rel="stylesheet" href="/assets/css/layout/footer.css" />
+    <link rel="stylesheet" href="/assets/css/pages/accueil.css" />
 
     <title>Coffee Time</title>
   </head>
@@ -53,13 +53,15 @@
     </header>
 
     <main class="main-container">
-      <section class="about">
+      <section id="about" class="about">
         <div class="about__content">
-          <h1 class="about__title">Bienvenue dans notre café</h1>
-          <p class="about__text">
-            Venez découvrir notre gamme de cafés soigneusement sélectionnés par
-            nos expert, torréfiés sur place par nos artisans passionnés
-          </p>
+          <div class="about__text-container">
+            <h1 class="about__title">Bienvenue dans notre café</h1>
+            <p class="about__text">
+              Venez découvrir notre gamme de cafés soigneusement sélectionnés
+              par nos expert, torréfiés sur place par nos artisans passionnés
+            </p>
+          </div>
           <img
             class="about__img"
             src="/assets/img/a table.webp"
@@ -70,42 +72,46 @@
 
       <section class="skills">
         <div class="skills__content">
-          <h2 class="skills__title">Notre savoir-faire</h2>
-          <p class="skills__text">
-            Apprenez en plus sur notre processus de torréfaction et notre savoir
-            faire
-          </p>
-          <img
-            class="skills__img"
-            src="/assets/img/préparation.webp"
-            alt="Grain de café en préparation avant torréfaction"
-          />
-          <img
-            class="skills__img"
-            src="/assets/img/final torifié.webp"
-            alt="image de notre savoir faire"
-          />
+          <div class="skills__img-container">
+            <img class="skills__img" src="/assets/img/préparation.webp" />
+            <img class="skills__img" src="/assets/img/final torifié.webp" />
+          </div>
+          <div class="skills__text-container">
+            <h2 class="skills__title">Notre savoir-faire</h2>
+            <p class="skills__text">
+              Apprenez en plus sur notre processus de torréfaction et notre
+              savoir-faire
+            </p>
+            <a href="#about" class="skills__btn">En savoir plus</a>
+          </div>
         </div>
       </section>
 
       <section class="shop">
         <div class="shop__content">
-          <h2 class="shop__title">La boutique</h2>
-          <p class="shop__text">
-            Découvrez nos produits et nos accessoires de café pour votre plaisir
-            gustatif
-          </p>
-          <img
-            class="shop__img"
-            src="/assets/img/café à lancienne.webp"
-            alt="image de notre savoir faire"
-          />
-          <img
-            class="shop__img"
-            src="/assets/img/sachet-cafée.webp"
-            alt="image de notre savoir faire"
-          />
-          <a href="#">Voir tous les produits</a>
+          <div class="shop__text-container">
+            <h2 class="shop__title">La boutique</h2>
+            <p class="shop__text">
+              Découvrez nos produits et nos accessoires de café pour votre
+              plaisir gustatif
+            </p>
+          </div>
+
+          <div class="shop__img-block">
+            <div class="shop__img-container">
+              <img
+                class="shop__img"
+                src="/assets/img/café à lancienne.webp"
+                alt="Image de notre savoir-faire"
+              />
+              <img
+                class="shop__img"
+                src="/assets/img/sachet-cafée.webp"
+                alt="Image de notre savoir-faire"
+              />
+            </div>
+            <a href="#" class="shop__link">Voir tous les produits</a>
+          </div>
         </div>
       </section>
 
@@ -117,9 +123,10 @@
             <p class="news__product-text">Description du produit</p>
             <img
               class="news__product-img"
-              src="/assets/img/cafe-sachet.webp"
+              src="/assets/img/sachet.webp"
               alt="Café en grain en sachet"
             />
+            <a href="#" class="news__product-btn">Voir le produit</a>
           </article>
 
           <article class="news__product">
@@ -130,6 +137,7 @@
               src="/assets/img/sachet.webp"
               alt="Café en grain en sachet"
             />
+            <a href="#" class="news__product-btn">Voir le produit</a>
           </article>
 
           <article class="news__product">
@@ -140,6 +148,7 @@
               src="/assets/img/sachet.webp"
               alt="Café en grain en sachet"
             />
+            <a href="#" class="news__product-btn">Voir le produit</a>
           </article>
         </div>
       </section>
