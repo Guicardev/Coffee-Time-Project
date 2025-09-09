@@ -1,0 +1,19 @@
+/* base.css ou global.css */
+
+/* Appliquer un padding-bottom à tous les main pour laisser de l'espace avant le footer */
+main {
+  flex: 1;
+  padding-bottom: 3em; /* Ajuste selon tes goûts */
+}
+
+/* Optionnel : pour que le main prenne au moins toute la hauteur de l'écran */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
