@@ -1,0 +1,305 @@
+/* ========== Variables locales à ce fichier ========== */
+:root {
+  --coffee-dark: #8b5e3c;
+  --coffee-medium: #c89b6d;
+  --coffee-light: #f5ede3;
+  --coffee-cream: #fffaf5;
+  --coffee-text: #2e2e2e;
+  --coffee-hover: #b57b4f;
+  --font-title: "Georgia", serif;
+  --font-text: "Arial", sans-serif;
+}
+
+/* ========== Section Catalogue (mobile-first) ========== */
+.catalogue {
+  background: var(--coffee-light);
+  padding: 2em 1.5em;
+}
+
+/* Conteneur global : titre + filtres + recherche */
+.catalogue__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Titre */
+.catalogue__title {
+  font-family: var(--font-title);
+  font-size: 1.6em;
+  color: var(--coffee-dark);
+}
+
+/* Bouton + recherche regroupés */
+.catalogue__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+/* Bouton filtre */
+.catalogue__filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.3em 0.6em;
+  font-size: 0.85em;
+  background: var(--coffee-medium);
+  color: #fff;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+  width: auto;
+  justify-content: center;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Panneau de filtres */
+.catalogue__filters {
+  position: absolute;
+  top: 70px;
+  right: 1.5rem;
+  background: var(--coffee-cream);
+  border: 1px solid var(--coffee-medium);
+  padding: 1.5rem;
+  border-radius: 0.6em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  /* animation */
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  z-index: 1000;
+  width: 260px;
+}
+
+.catalogue__filters.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Titres */
+.catalogue__filters-title {
+  font-family: var(--font-title);
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  color: var(--coffee-dark);
+  border-bottom: 1px solid var(--coffee-medium);
+  padding-bottom: 0.3rem;
+}
+
+/* Fieldsets */
+.catalogue__filters fieldset {
+  border: none;
+  margin-bottom: 1.2rem;
+}
+
+.catalogue__filters legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--coffee-dark);
+}
+
+/* Labels */
+.catalogue__filters label {
+  display: block;
+  font-family: var(--font-text);
+  font-size: 0.9em;
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+
+/* Bouton appliquer */
+.catalogue__filters-apply {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  background: var(--coffee-medium);
+  color: #fff;
+  border: none;
+  border-radius: 0.4em;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.catalogue__filters-apply:hover {
+  background: var(--coffee-hover);
+}
+
+.catalogue__filters.is-visible {
+  display: block;
+}
+
+.catalogue__filter-btn:hover,
+.catalogue__filter-btn:focus {
+  background: var(--coffee-hover);
+  transform: translateY(-2px);
+}
+
+/* Formulaire de recherche */
+.catalogue__search {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.catalogue__search-input {
+  flex: 1;
+  padding: 0.5em;
+  border: 1px solid var(--coffee-medium);
+  border-radius: 0.4em;
+  font-family: var(--font-text);
+}
+
+.catalogue__search-btn {
+  padding: 0.5em 0.8em;
+  background: var(--coffee-medium);
+  color: #fff;
+  border: none;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.catalogue__search-btn:hover,
+.catalogue__search-btn:focus {
+  background: var(--coffee-hover);
+}
+
+/* Cartes produits (mobile-first) */
+.catalogue__products {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 2em;
+  align-items: center;
+}
+
+.catalogue__product {
+  background: var(--coffee-cream);
+  padding: 1em;
+  gap: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.catalogue__product:hover,
+.catalogue__product:focus {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: var(--coffee-hover);
+}
+
+/* Ordre personnalisé */
+.catalogue__product-title {
+  font-family: var(--font-title);
+  font-size: 1.1em;
+  color: var(--coffee-dark);
+  margin-bottom: 0.6em;
+}
+
+.catalogue__product-img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  border-radius: 0.5em;
+  margin: 0.5em 0;
+}
+
+.catalogue__product-description {
+  font-family: var(--font-text);
+  font-size: 0.9em;
+  color: var(--coffee-text);
+  margin: 0.3em 0 0.8em 0;
+
+  /* Limite à 3 lignes */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+
+  /* Version standard (compatibilité future) */
+  line-clamp: 3;
+  box-orient: vertical;
+}
+
+.catalogue__product-btn {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  font-size: 0.85em;
+  background: var(--coffee-medium);
+  color: #fff;
+  border-radius: 0.3em;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.catalogue__product-btn:hover,
+.catalogue__product-btn:focus {
+  background: var(--coffee-hover);
+  transform: translateY(-2px);
+}
+
+/* ===== Desktop / écrans ≥ 768px ===== */
+@media (min-width: 768px) {
+  .catalogue__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .catalogue__controls {
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .catalogue__filter-btn {
+    padding: 0.4em 0.8em;
+    font-size: 0.9em;
+  }
+
+  .catalogue__search {
+    flex: 0 0 200px;
+  }
+
+  .catalogue__search-input {
+    padding: 0.5em;
+  }
+
+  .catalogue__search-btn {
+    padding: 0.5em 0.8em;
+  }
+
+  /* Desktop : cartes alignées et centrées */
+  .catalogue__products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; /* centre horizontalement */
+    gap: 1.5em;
+  }
+
+  /* 4 cartes par ligne (25%) ou 5 cartes par ligne (20%) */
+  .catalogue__product {
+    flex: 0 0 calc(20% - 1em); /* 5 par ligne */
+    max-width: 220px;
+  }
+}

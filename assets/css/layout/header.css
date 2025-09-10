@@ -1,7 +1,7 @@
 /* ===== HEADER (mobile first) ===== */
 .header {
   display: flex;
-  justify-content: space-between; /* logo à gauche, menu à droite */
+  justify-content: space-between;
   align-items: center;
   background: #c89b6d;
   padding: 0.3em 0.5em;
@@ -75,7 +75,7 @@
 .header__login-btn:active {
   background: #b57b4f;
   transform: scale(1.02);
-  box-shadow: inset 0 -2px 0 #fff; /* petit trait en bas pour montrer l’item actif */
+  box-shadow: inset 0 -2px 0 #fff; 
 }
 
 /* pour la partie ejs à modifier
@@ -95,7 +95,7 @@
 /* Formulaire login */
 .header__login {
   position: relative;
-  margin-left: 0.5em; /* marge sur desktop uniquement */
+  margin-left: 0.5em; 
 }
 
 .header__login-form {
@@ -149,7 +149,7 @@
   .header__login-btn {
     width: 100%;
     text-align: center;
-    padding: 0.7em 0; /* padding plus confortable pour toucher */
+    padding: 0.7em 0;
     border-radius: 0.4em;
   }
 
@@ -159,11 +159,11 @@
 
   /* Formulaire inline sous le bouton sur mobile */
   .header__login-form {
-    position: static; /* plus absolute */
+    position: static; 
     transform: none;
-    width: 100%; /* prend toute la largeur */
+    width: 100%; 
     max-width: 100%;
-    margin-top: 0.5em; /* espace sous le bouton */
+    margin-top: 0.5em; 
     top: auto;
     left: auto;
     right: auto;
@@ -181,6 +181,6 @@
   }
 
   .header__login {
-    margin-left: 0.5em; /* marge sur desktop */
+    margin-left: 0.5em;
   }
 }
