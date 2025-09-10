@@ -56,6 +56,87 @@
     transform 0.2s ease;
 }
 
+/* Panneau de filtres */
+.catalogue__filters {
+  position: absolute;
+  top: 70px;
+  right: 1.5rem;
+  background: var(--coffee-cream);
+  border: 1px solid var(--coffee-medium);
+  padding: 1.5rem;
+  border-radius: 0.6em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  /* animation */
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  z-index: 1000;
+  width: 260px;
+}
+
+.catalogue__filters.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Titres */
+.catalogue__filters-title {
+  font-family: var(--font-title);
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  color: var(--coffee-dark);
+  border-bottom: 1px solid var(--coffee-medium);
+  padding-bottom: 0.3rem;
+}
+
+/* Fieldsets */
+.catalogue__filters fieldset {
+  border: none;
+  margin-bottom: 1.2rem;
+}
+
+.catalogue__filters legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--coffee-dark);
+}
+
+/* Labels */
+.catalogue__filters label {
+  display: block;
+  font-family: var(--font-text);
+  font-size: 0.9em;
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+
+/* Bouton appliquer */
+.catalogue__filters-apply {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  background: var(--coffee-medium);
+  color: #fff;
+  border: none;
+  border-radius: 0.4em;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.catalogue__filters-apply:hover {
+  background: var(--coffee-hover);
+}
+
+.catalogue__filters.is-visible {
+  display: block;
+}
+
 .catalogue__filter-btn:hover,
 .catalogue__filter-btn:focus {
   background: var(--coffee-hover);
@@ -98,7 +179,7 @@
   flex-direction: column;
   gap: 1.5em;
   margin-top: 2em;
-  align-items: center; /* centre les cartes sur mobile */
+  align-items: center;
 }
 
 .catalogue__product {
