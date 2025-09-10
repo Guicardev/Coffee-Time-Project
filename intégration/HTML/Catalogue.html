@@ -77,6 +77,48 @@
             </form>
           </div>
         </div>
+
+        <!-- Panneau de filtres caché par défaut -->
+        <div id="filtersPanel" class="catalogue__filters">
+          <h2 class="catalogue__filters-title">Filtres</h2>
+          <form>
+            <fieldset>
+              <legend>Catégories</legend>
+              <label
+                ><input type="checkbox" name="category" value="grain" /> Café en
+                grains</label
+              ><br />
+              <label
+                ><input type="checkbox" name="category" value="moulu" /> Café
+                moulu</label
+              ><br />
+              <label
+                ><input type="checkbox" name="category" value="capsule" />
+                Capsules</label
+              >
+            </fieldset>
+
+            <fieldset>
+              <legend>Prix</legend>
+              <label
+                ><input type="radio" name="price" value="low" /> Moins de
+                10€</label
+              ><br />
+              <label
+                ><input type="radio" name="price" value="mid" /> 10€ -
+                20€</label
+              ><br />
+              <label
+                ><input type="radio" name="price" value="high" /> Plus de
+                20€</label
+              >
+            </fieldset>
+
+            <button type="submit" class="catalogue__filters-apply">
+              Appliquer
+            </button>
+          </form>
+        </div>
       </section>
 
       <section class="catalogue__products">
@@ -267,5 +309,6 @@
     </footer>
 
     <script src="/intégration/js/loginForm.js"></script>
+    <script src="/intégration/js/filtertoggle.js"></script>
   </body>
 </html>
