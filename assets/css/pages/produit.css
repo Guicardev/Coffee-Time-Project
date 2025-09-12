@@ -10,7 +10,7 @@
   --font-text: "Arial", sans-serif;
 }
 
-/* Layout global - mobile first */
+/* ===== Layout global - mobile first ===== */
 .product {
   padding: 1rem;
   display: flex;
@@ -110,7 +110,7 @@
   margin-bottom: 0.3rem;
 }
 
-/* On cache les radios mais on garde la possibilité de sélection */
+/* On cache les radios */
 .product-weight input[type="radio"] {
   display: none;
 }
@@ -131,18 +131,18 @@
   transition: all 0.2s ease-in-out;
 }
 
-.product-weight label:hover {
-  background-color: var(--coffee-medium);
-  color: var(--coffee-cream);
-  transform: translateY(-2px);
-}
-
-/* Sélection */
-.product-weight input[type="radio"]:checked + label {
+/* État actif */
+.product-weight label.active {
   background-color: var(--coffee-dark);
   color: var(--coffee-cream);
   border-color: var(--coffee-dark);
   font-weight: bold;
+}
+
+/* Effet au survol */
+.product-weight label:hover {
+  background-color: var(--coffee-medium);
+  color: var(--coffee-cream);
 }
 
 /* Prix */
@@ -197,6 +197,6 @@
 
   .product-price {
     font-size: 1.2rem;
-    color: var(--coffee-dark); /* couleur marron comme le titre */
+    color: var(--coffee-dark);
   }
 }
