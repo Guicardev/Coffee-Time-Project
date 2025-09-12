@@ -1,0 +1,120 @@
+<!--Page temple pour les produits afin d'éviter de faire un html par produit car du ejs viendra faire le changement -->
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produit - Coffee Time</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/base/reset.css" />
+    <link rel="stylesheet" href="/assets/css/base/global.css" />
+    <link rel="stylesheet" href="/assets/css/layout/header.css" />
+    <link rel="stylesheet" href="/assets/css/layout/footer.css" />
+    <link rel="stylesheet" href="/assets/css/pages/produit.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="header__logo" href="/intégration/HTML/Accueil.html">
+        <img src="/assets/img/Logo_coffeTime.png" alt="logo Coffee Time" />
+        <span class="sr-only">Mon logo</span>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item">
+            <a href="/intégration/HTML/Accueil.html">Accueil</a>
+          </li>
+          <li class="header__item">
+            <a href="/intégration/HTML/Catalogue.html">Catalogue</a>
+          </li>
+          <li class="header__item"><a href="#">A propos</a></li>
+
+          <li class="header__item header__login">
+            <button id="loginBtn" class="header__login-btn">
+              Se connecter
+            </button>
+            <div id="loginForm" class="header__login-form">
+              <form action="/login" method="post">
+                <input type="email" name="email" placeholder="Email" required />
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Mot de passe"
+                  required
+                />
+                <button type="submit">Connexion</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="product">
+      <section class="product-container">
+        <div class="product-details">
+          <h1 class="product-name">Nom du café</h1>
+          <p class="product-description">
+            Une description détaillée du café, son origine, ses arômes et son
+            style de torréfaction.
+          </p>
+          <div class="product-image">
+            <img src="/assets/img/sachet2.webp" alt="Image de l'article" />
+          </div>
+
+          <div class="product-rating">
+            <span>Note :</span>
+            ⭐⭐⭐⭐☆ (4/5)
+          </div>
+
+          <div class="product-intensity" data-intensity="3">
+            <span>Intensité :</span>
+            <div class="beans"></div>
+          </div>
+
+          <div class="product-weight">
+            <span>Grammage :</span>
+            <label><input type="radio" name="weight" value="250" /> 250g</label>
+            <label><input type="radio" name="weight" value="500" /> 500g</label>
+            <label><input type="radio" name="weight" value="1000" /> 1kg</label>
+          </div>
+
+          <div class="product-price">
+            <span>Prix :</span> <strong>12,90 €</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2025 Coffee Time, tout droit réservé</p>
+
+      <nav class="footer__social">
+        <a href="#" class="footer__link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="footer__link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="mailto:contact@coffeetime.com"
+          class="footer__link"
+          aria-label="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </nav>
+
+      <a href="/intégration/HTML/MentionsLegales.html" class="footer__legal"
+        >Mentions légales</a
+      >
+    </footer>
+
+    <script src="/intégration/js/loginForm.js"></script>
+    <script src="/intégration/js/produit.js"></script>
+  </body>
+</html>
