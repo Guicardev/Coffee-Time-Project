@@ -1,4 +1,4 @@
-/* ========== Variables ========== */
+/* ========== Variables ==========
 :root {
   --coffee-dark: #8b5e3c;
   --coffee-medium: #c89b6d;
@@ -8,7 +8,7 @@
   --coffee-hover: #b57b4f;
   --font-title: "Georgia", serif;
   --font-text: "Arial", sans-serif;
-}
+} /*
 
 /* ===== Layout global - mobile first ===== */
 .product {

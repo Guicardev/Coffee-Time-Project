@@ -1,6 +1,6 @@
 /* ===== Page accueil (mobile-first) ===== */
 
-/* ===== Variables CSS ===== */
+/* ===== Variables CSS =====
 :root {
   --coffee-dark: #8b5e3c;
   --coffee-medium: #c89b6d;
@@ -10,7 +10,7 @@
   --coffee-hover: #b57b4f;
   --font-title: "Georgia", serif;
   --font-text: "Arial", sans-serif;
-}
+} /*
 
 /* ===== Sections générales ===== */
 section {
