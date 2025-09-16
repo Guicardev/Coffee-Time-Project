@@ -1,6 +1,6 @@
 /* ===== Mentions légales ===== */
 
-/* ===== Variables globales ===== */
+/* ===== Variables globales =====
 :root {
   --coffee-dark: #8b5e3c;
   --coffee-medium: #c89b6d;
@@ -11,7 +11,7 @@
 
   --font-title: "Georgia", serif;
   --font-text: "Arial", sans-serif;
-}
+}*/
 
 .legal {
   background: var(--coffee-cream);
