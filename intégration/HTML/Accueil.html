@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
+    <link rel="stylesheet" href="/assets/css/base/variables.css" />
     <link rel="stylesheet" href="/assets/css/base/reset.css" />
     <link rel="stylesheet" href="/assets/css/base/global.css" />
     <link rel="stylesheet" href="/assets/css/layout/header.css" />
@@ -34,7 +34,9 @@
           <li class="header__item">
             <a href="/intégration/HTML/Catalogue.html">Catalogue</a>
           </li>
-          <li class="header__item"><a href="#">A propos</a></li>
+          <li class="header__item">
+            <a href="/intégration/HTML/aPropos.html">A propos</a>
+          </li>
 
           <li class="header__item header__login">
             <button id="loginBtn" class="header__login-btn">
@@ -58,43 +60,48 @@
     </header>
 
     <main class="main-container">
-      <section id="about" class="about">
+      <!-- ===== Bienvenue dans notre café ===== -->
+      <section id="about" class="about fade-in-section">
         <div class="about__content">
-          <div class="about__text-container">
+          <div class="about__text-container fade-in-child">
             <h1 class="about__title">Bienvenue dans notre café</h1>
             <p class="about__text">
               Venez découvrir notre gamme de cafés soigneusement sélectionnés
-              par nos expert, torréfiés sur place par nos artisans passionnés
+              par nos experts, torréfiés sur place par nos artisans passionnés
             </p>
           </div>
           <img
-            class="about__img"
+            class="about__img fade-in-child"
             src="/assets/img/a table.webp"
             alt="Café authentique sur une table ancienne"
           />
         </div>
       </section>
 
-      <section class="skills">
+      <!-- ===== Notre savoir-faire ===== -->
+      <section class="skills fade-in-section">
         <div class="skills__content">
-          <div class="skills__img-container">
+          <div class="skills__img-container fade-in-child">
             <img class="skills__img" src="/assets/img/grain-torifié.webp" />
             <img class="skills__img" src="/assets/img/final torifié.webp" />
           </div>
-          <div class="skills__text-container">
+          <div class="skills__text-container fade-in-child">
             <h2 class="skills__title">Notre savoir-faire</h2>
             <p class="skills__text">
               Apprenez en plus sur notre processus de torréfaction et notre
               savoir-faire
             </p>
-            <a href="#about" class="skills__btn">En savoir plus</a>
+            <a href="/intégration/HTML/aPropos.html" class="skills__btn"
+              >En savoir plus</a
+            >
           </div>
         </div>
       </section>
 
-      <section class="shop">
+      <!-- ===== La boutique ===== -->
+      <section class="shop fade-in-section">
         <div class="shop__content">
-          <div class="shop__text-container">
+          <div class="shop__text-container fade-in-child">
             <h2 class="shop__title">La boutique</h2>
             <p class="shop__text">
               Découvrez nos produits et nos accessoires de café pour votre
@@ -102,7 +109,7 @@
             </p>
           </div>
 
-          <div class="shop__img-block">
+          <div class="shop__img-block fade-in-child">
             <div class="shop__img-container">
               <img
                 class="shop__img"
@@ -122,10 +129,11 @@
         </div>
       </section>
 
-      <section class="news">
-        <h2 class="news__title">Nouveautés</h2>
+      <!-- ===== Les nouveautés ===== -->
+      <section class="news fade-in-section">
+        <h2 class="news__title fade-in-child">Nouveautés</h2>
         <div class="news__products">
-          <article class="news__product">
+          <article class="news__product fade-in-child">
             <h3 class="news__product-title">Produit A</h3>
             <p class="news__product-text">Description du produit</p>
             <img
@@ -138,7 +146,7 @@
             >
           </article>
 
-          <article class="news__product">
+          <article class="news__product fade-in-child">
             <h3 class="news__product-title">Produit B</h3>
             <p class="news__product-text">Description du produit</p>
             <img
@@ -151,7 +159,7 @@
             >
           </article>
 
-          <article class="news__product">
+          <article class="news__product fade-in-child">
             <h3 class="news__product-title">Produit C</h3>
             <p class="news__product-text">Description du produit</p>
             <img
@@ -190,7 +198,7 @@
         >Mentions légales</a
       >
     </footer>
-
+    <script src="/intégration/js/scrollAnimated.js"></script>
     <script src="/intégration/js/loginForm.js"></script>
   </body>
 </html>
