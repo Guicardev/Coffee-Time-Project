@@ -1,0 +1,74 @@
+/* ===== Mentions légales ===== */
+
+/* ===== Variables globales =====
+:root {
+  --coffee-dark: #8b5e3c;
+  --coffee-medium: #c89b6d;
+  --coffee-light: #f5ede3;
+  --coffee-cream: #fffaf5;
+  --coffee-text: #2e2e2e;
+  --coffee-hover: #b57b4f;
+
+  --font-title: "Georgia", serif;
+  --font-text: "Arial", sans-serif;
+}*/
+
+.legal {
+  background: var(--coffee-cream);
+  padding: 3em 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.legal__title {
+  font-family: var(--font-title);
+  font-size: 1.8em;
+  color: var(--coffee-dark);
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+.legal__section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.legal__subtitle {
+  font-family: var(--font-title);
+  font-size: 1.3em;
+  color: var(--coffee-dark);
+  margin-bottom: 0.3em;
+}
+
+.legal__text {
+  font-family: var(--font-text);
+  color: var(--coffee-text);
+  line-height: 1.6;
+}
+
+/* ===== Desktop / écrans ≥ 768px ===== */
+@media (min-width: 768px) {
+  .legal {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4em 2em;
+  }
+
+  .legal__title {
+    font-size: 2em;
+  }
+
+  .legal__subtitle {
+    font-size: 1.5em;
+  }
+
+  .legal__section {
+    gap: 0.7em;
+  }
+
+  .legal__text {
+    font-size: 1em;
+  }
+}

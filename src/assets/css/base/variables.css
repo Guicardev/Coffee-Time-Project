@@ -1,0 +1,11 @@
+/* ========== Variables pour les couleurs et police ========== */
+:root {
+  --coffee-dark: #8b5e3c;
+  --coffee-medium: #c89b6d;
+  --coffee-light: #f5ede3;
+  --coffee-cream: #fffaf5;
+  --coffee-text: #2e2e2e;
+  --coffee-hover: #b57b4f;
+  --font-title: "Georgia", serif;
+  --font-text: "Arial", sans-serif;
+}
