@@ -199,7 +199,7 @@ Format recommandé : `identification : message clair et concis en anglais`
 
 ## 🌐 V2 (À venir, non finalisé)
 
-- SPA React + API Node.js/Express
+- SPA React/Next.js + API Node.js/Express
 - Docker et HTTPS via Nginx
 - Fonctionnalités avancées : panier, paiement, commandes
 - Sécurité renforcée et tests automatisés
