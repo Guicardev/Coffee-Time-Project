@@ -1,0 +1,362 @@
+/* ===== Page accueil (mobile-first) ===== */
+
+/* ===== Variables CSS =====
+:root {
+  --coffee-dark: #8b5e3c;
+  --coffee-medium: #c89b6d;
+  --coffee-light: #f5ede3;
+  --coffee-cream: #fffaf5;
+  --coffee-text: #2e2e2e;
+  --coffee-hover: #b57b4f;
+  --font-title: "Georgia", serif;
+  --font-text: "Arial", sans-serif;
+} /*
+
+/* ===== Sections générales ===== */
+section {
+  padding: 3em 1.5em;
+}
+
+section h1,
+section h2 {
+  font-family: var(--font-title);
+  margin-bottom: 0.6em;
+  color: var(--coffee-dark);
+  font-weight: normal;
+}
+
+section p {
+  font-family: var(--font-text);
+  line-height: 1.6;
+  color: var(--coffee-text);
+  margin-bottom: 1em;
+}
+
+/* ===== Bienvenue dans notre café (About) ===== */
+.about {
+  background: var(--coffee-light);
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.about__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.about__img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 0.5em;
+}
+
+/* ===== Notre savoir-faire (Skills) ===== */
+.skills {
+  background: var(--coffee-cream);
+}
+
+.skills__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.skills__img-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__img {
+  max-width: 100%;
+  border-radius: 0.5em;
+}
+
+.skills__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.skills__btn {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  font-size: 0.85em;
+  background: var(--coffee-medium);
+  color: #fff;
+  border-radius: 0.3em;
+  text-decoration: none;
+  width: auto;
+  text-align: center;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.skills__btn:hover,
+.skills__btn:focus {
+  background: var(--coffee-hover);
+  transform: translateY(-2px);
+}
+
+/* ===== La boutique (Shop) ===== */
+.shop {
+  background: var(--coffee-light);
+}
+
+.shop__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.shop__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.shop__img-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.shop__img {
+  max-width: 100%;
+  border-radius: 0.5em;
+}
+
+.shop__img-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.shop__link {
+  text-align: center;
+  margin-top: 0.8em;
+  text-decoration: none;
+  color: var(--coffee-dark);
+  font-weight: bold;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.shop__link:hover,
+.shop__link:focus {
+  color: var(--coffee-hover);
+  transform: translateY(-2px);
+}
+
+/* ===== Les nouveautés (News) ===== */
+.news {
+  background: var(--coffee-cream);
+  text-align: center;
+}
+
+.news__products {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  margin-top: 1.5em;
+  align-items: center;
+}
+
+.news__product {
+  background: var(--coffee-light);
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
+  width: 100%;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.news__product:hover,
+.news__product:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.news__product-title {
+  font-family: var(--font-title);
+  margin-bottom: 0.4em;
+  color: var(--coffee-dark);
+}
+
+.news__product-text {
+  font-family: var(--font-text);
+  color: var(--coffee-text);
+  margin-bottom: 0.5em;
+}
+
+.news__product-img {
+  max-width: 100%;
+  border-radius: 0.3em;
+}
+
+.news__product-btn {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  background: var(--coffee-medium);
+  color: #fff;
+  border-radius: 0.3em;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  text-align: center;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.news__product-btn:hover,
+.news__product-btn:focus {
+  background: var(--coffee-hover);
+  transform: translateY(-2px);
+}
+
+/* ===== Version Desktop / écrans ≥ 768px ===== */
+@media (min-width: 768px) {
+  /* ===== Bienvenue dans notre café (About) ===== */
+  .about__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(2em, 5vw, 4em);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about__text-container {
+    flex: 1;
+    max-width: clamp(400px, 35%, 600px);
+  }
+
+  .about__img {
+    flex: 0 0 auto;
+    max-width: clamp(300px, 35%, 500px);
+    border-radius: 0.5em;
+  }
+
+  /* ===== Notre savoir-faire (Skills) ===== */
+  .skills__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: clamp(2em, 5vw, 4em);
+  }
+
+  /* Conteneur des images à gauche */
+  .skills__img-container {
+    flex: 1;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-start;
+    order: 1;
+  }
+
+  .skills__img {
+    max-width: 265px;
+    border-radius: 0.5em;
+    height: auto;
+  }
+
+  /* Conteneur du texte à droite */
+  .skills__text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    order: 2;
+  }
+
+  .skills__btn {
+    width: auto;
+    align-self: flex-start;
+    padding: 0.4em 0.8em;
+    font-size: 0.85em;
+    margin-top: 0.5em;
+  }
+
+  /* ===== La boutique (Shop) ===== */
+  .shop__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(2em, 5vw, 4em);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Conteneur texte */
+  .shop__text-container {
+    flex: 1;
+    max-width: clamp(400px, 35%, 600px);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  /* Conteneur images */
+  .shop__img-container {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-start;
+  }
+
+  .shop__img {
+    max-width: 220px;
+    height: auto;
+    border-radius: 0.5em;
+  }
+
+  .shop__link {
+    align-self: center;
+    margin-top: 1em;
+    text-align: center;
+  }
+
+  /* Conteneur images + bouton */
+  .shop__img-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  /* Conteneur des images seules */
+  .shop__img-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  /* ===== Nouveautés (articles en ligne) ===== */
+  .news__products {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -1,62 +1,74 @@
-# CHARTE GRAPHIQUE VERSION 1 > a revoir
+# CHARTE GRAPHIQUE V1
 
 ## 🎨 COULEURS
 
-Palette de couleurs chaleureseure inspirée du café et du naturel :
+Palette inspirée du café et de son univers chaleureux, utilisée dans tout le site :
 
-- Fond principal (beige café crème) : #F5E6D3
+- ☕ Coffee Dark (marron corsé) : #8B5E3C → titres, accents forts
 
-- Accent clair (sable doux) : #EADAC1
+- 🌰 Coffee Medium (doré/cuivré) : #C89B6D → boutons, call-to-action
 
-- Texte principal (brun foncé / espresso) : #3B2C2A
+- 🍪 Coffee Light (beige café crème) : #F5EDE3 → arrière-plans clairs
 
-- Accent secondaire (brun moyen) : #8B5E3C
+- 🥛 Coffee Cream (blanc cassé) : #FFFAF5 → sections secondaires
 
-- Boutons & Call-to-Action (marron café corsé) : #5A3A1C
+- 🖋️ Coffee Text (brun foncé / espresso) : #2E2E2E → texte principal
 
-- Éléments de contraste (doré/cuivré facultatif) : #C89B6D
+- 🔥 Coffee Hover (accent chaud) : #B57B4F → survols boutons & liens
 
-## Modifier les rendu si nécessaire.
+⚠️ Tous les codes couleurs sont centralisés dans le fichier : variable.css
 
-## Typographies
+## ✍️ Typographies
 
-- Titres / Accroches : Playfair Display (ou Merriweather)
-  → Serif élégante, donne une touche artisanale et authentique.
+- **Titres / Accroches** : Georgia (fallback serif)
+  → Élégante, artisanale, met en avant l’authenticité.
 
-- Texte / Paragraphes : Roboto ou Open Sans
-  → Lisible, moderne et accessible sur tous les écrans.
+- **Texte courant** : Arial (fallback sans-serif)
+  → Lisible, moderne et compatible sur tous les écrans.
 
-- Navigation & boutons : Montserrat (ou Poppins)
-  → Sans serif moderne, assure la clarté et la hiérarchie visuelle.
+⚠️ Tous les codes couleurs sont centralisés dans le fichier : variable.css
 
----
-
-## Style visuel
-
-- Ambiance : chaleureuse, artisanale, moderne.
-
-- Images : photos réalistes de café (grains, tasses, sachets kraft, accessoires).
-
-- Boutons : arrondis, couleurs contrastées (fond brun foncé + texte blanc).
-
-- Icônes : sobres, style line icons (Lucide, FontAwesome).
-
-- Espacement : aéré (padding généreux pour respirer).
-
-- Logo officiel : instagram, twitter, email etc...
+```css
+--font-title: "Georgia", serif;
+--font-text: "Arial", sans-serif;
+```
 
 ---
 
-## Accessibilité
+## 🎨 Style visuel
 
-- Contraste texte/fond conforme (brun foncé sur beige clair).
+- **Ambiance générale** : chaleureuse, artisanale, moderne.
 
-- Tailles de polices ( à ajuster):
+- **Images** : photos réalistes (grains de café, tasses, sachets kraft, accessoires).
 
-  - Titres : 28–36px
+- **Boutons** : arrondis (`border-radius: 0.3em à 0.5em`), fond coffee-medium avec texte blanc.
 
-  - Sous-titres : 20–24px
+- **Icônes** : sobres, style line icons (FontAwesome utilisé).
 
-  - Texte : 16–18px minimum
+- **Espacement** : mise en page aérée, padding généreux dans les sections (`2rem à 3rem`).
 
-- Boutons larges avec texte clair (pas uniquement une icône).
+- **Logo & réseaux sociaux** :
+
+  - Logo officiel Coffee Time (utilisation recommandée : sur fond clair Coffee Light ou Cream).
+
+  - Icônes Twitter, Instagram, Email (via FontAwesome)
+
+---
+
+## ♿ Accessibilité
+
+- **Contraste** : brun foncé sur beige clair (WCAG AA minimum).
+
+- **Tailles de police** :
+
+  - Titres principaux : `1.8rem – 2.2rem` (~28–36px)
+
+  - Sous-titres : `1.2rem – 1.5rem` (~20–24px)
+
+  - Texte courant : `1rem – 1.125rem` (16–18px)
+
+- **Interaction** :
+
+  - Boutons larges, avec texte lisible (jamais uniquement une icône).
+
+  - Éléments interactifs (liens, CTA) changent de couleur au survol (hover).
